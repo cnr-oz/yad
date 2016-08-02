@@ -14,8 +14,18 @@
 
 <div id="header" class="clearfix" role="banner">
 	<div class="<?php the_container(); ?>">
-		<?php the_logo(); ?>
-		<?php bootstrap_menu('main'); ?>
+		<div class="row">
+			<div class="col-sm-2">
+				<?php the_logo(); ?>
+			</div>
+			<div class="col-sm-10">
+				<?php cnr_social_menu('social'); ?>
+				<?php bootstrap_menu('main'); ?>
+			</div>
+		</div>
+
+
+
     </div>
 </div>
 <div id="main">

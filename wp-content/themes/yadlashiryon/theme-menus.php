@@ -1,8 +1,9 @@
 <?php
 
 register_nav_menus(
-	array( 
-		'main' => 'Main Menu',
+	array(
+        'main' => 'Main Menu',
+        'social' => 'Social',
 		'footer' => 'Footer Menu'
 	)
 );

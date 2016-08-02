@@ -11,7 +11,7 @@ $header-height: 80px;
 }
 
 #the-logo {
-	float: left;
+	float: right;
 	overflow: hidden;
 	
 	a {
@@ -27,7 +27,7 @@ $header-height: 80px;
 		&.logo-image {
 			display: block;
 			text-indent: -9999px;
-			height: $header-height;
+			height: $header-height +20px;
 			min-width: 120px;
 			background-size: contain;
 		}
@@ -37,13 +37,13 @@ $header-height: 80px;
 // main navigation
 
 #nav-container {
-	float: right;
+	float: left;
 	
 	.navbar-nav li {
 		a {
 			padding: 0 $gitter;
 			display: block;
-			color: white;
+			color: $brown;
 			line-height: $header-height;
 			@include border-radius( 0 );
 			@include transition( all 250ms ease );
@@ -80,8 +80,42 @@ $header-height: 80px;
 			}
 		}
 		&.active a, &.active a:hover, &.active a:focus, a:hover {
-			color: darken($gray, 10%);
+
 			background-color: rgba(white, .8);
 		}
 	}
 }
+
+// social navigation
+.top-nav{
+	list-style: none;
+	padding-top: 1%;
+	padding-right: 0;
+	display: inline-block;
+}
+
+.top-nav li{
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.col-sm-10 nav{
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+}
+
+.top-nav a{
+	color: $brown;
+}
+
+.navbar-nav{
+	color: $brown;
+}
+
+#the-logo a{
+	background-repeat: no-repeat;
+}
+
+

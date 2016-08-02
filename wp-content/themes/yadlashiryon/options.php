@@ -23,6 +23,13 @@ function optionsframework_options() {
 		'type' => 'heading'
 	);
 	$options[] = array(
+		'name' => 'general info',
+		'desc' => 'tel',
+		'type' => 'text',
+		'id' => 'tel',
+	);
+
+	$options[] = array(
 		'desc' => 'Container',
 		'type' => 'radio',
 		'id' => 'container',
@@ -99,6 +106,28 @@ function optionsframework_options() {
 	$options[] = array(
 		'name' => __('Posts', 'scratch'),
 		'type' => 'heading'
+	);
+
+	$options[] = array(
+		'name' => 'Social',
+		'type' => 'heading'
+	);
+	$options[] = array(
+		'name' => 'Social Networks',
+		'desc' => 'facebook',
+		'id' => 'facebook',
+		'type' => 'text'
+	);
+	$options[] = array(
+		'desc' => 'Twitter',
+		'id' => 'twitter',
+		'type' => 'text'
+	);
+
+	$options[] = array(
+		'desc' => 'Youtube',
+		'id' => 'youtube',
+		'type' => 'text'
 	);
 
 	$options[] = array(
